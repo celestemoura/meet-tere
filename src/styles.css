@@ -1,0 +1,209 @@
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+body {
+  background-color: white;
+}
+
+button {
+  background: linear-gradient(to top, #9890e3 0%, #b1f4cf 80%);
+  border: 1px solid black;
+  border-radius: 60px;
+  box-shadow: 21px 21px 28px rgba(0, 0, 0, 0.3);
+  display: block;
+  font-family: "Baskervville", serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 25px;
+}
+
+button .button-text-hover {
+  display: none;
+}
+
+button:hover {
+  background: all 200ms
+    linear-gradient(
+      110.5deg,
+      rgba(248, 196, 249, 0.66) 22.8%,
+      rgba(253, 122, 4, 0.15) 64.6%
+    );
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: black;
+}
+
+button:hover .button-text {
+  display: none;
+}
+
+button:hover .button-text-hover {
+  display: inline;
+}
+
+em {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Baskervville", serif;
+  font-weight: bold;
+}
+
+hr {
+  border: 0.5px double black;
+  margin-bottom: 25px;
+}
+
+p {
+  font-family: "Baskervville", serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 10px;
+}
+
+.about {
+  line-height: 25px;
+  padding: 10px;
+}
+
+.avatar {
+  border: 3px double black;
+  border-radius: 20px;
+  box-shadow: -1px 0px 8px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 100%;
+}
+
+.container-top {
+  background: linear-gradient(
+    44.8deg,
+    rgba(255, 136, 102, 0.67) -53.1%,
+    rgba(255, 221, 136, 0.28) 49%
+  );
+  border: 3px double black;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 800px;
+  padding: 30px;
+}
+
+.container-top .avatar {
+  margin-top: 30px;
+}
+
+.container-top:hover {
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.container-middle {
+  background: linear-gradient(
+    44.8deg,
+    rgba(255, 136, 102, 0.67) -53.1%,
+    rgba(255, 221, 136, 0.28) 49%
+  );
+  border: 3px double black;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 800px;
+  padding: 30px;
+}
+
+.container-middle:hover {
+  background: linear-gradient(
+    110.5deg,
+    rgba(248, 196, 249, 0.66) 22.8%,
+    rgba(253, 122, 4, 0.15) 64.6%
+  );
+}
+
+.container-bottom {
+  background: linear-gradient(
+    44.8deg,
+    rgba(255, 136, 102, 0.67) -53.1%,
+    rgba(255, 221, 136, 0.28) 49%
+  );
+  border: 3px double black;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 800px;
+  padding: 30px;
+}
+
+.container-bottom .about {
+  padding-top: 60px;
+}
+
+.container-bottom:hover {
+  background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+}
+
+.signature {
+  font-size: 10px;
+  font-style: normal;
+}
+
+.testimonial {
+  align-items: center;
+  display: flex;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.testimonial-img {
+  border: 3px double black;
+  border-radius: 50%;
+  box-shadow: -1px 0px 8px 4px rgba(0, 0, 0, 0.2);
+  width: 100px;
+}
+
+.testimonial-invitation {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .about {
+    text-align: center;
+  }
+
+  .container-bottom .about {
+    padding-top: 5px;
+  }
+}
